@@ -7,8 +7,16 @@ $(document).ready(function() {
 
 
     // SELECT ID/CLASS
-    $("#list").css('fontSize', '30px');
+    // $("#list").css('fontSize', '30px');
+    // $(".text").css('fontSize', '30px');
 
-    $(".text").css('fontSize', '30px');
+
+    // SELECT OTHER ELEMENT
+    $("input[type='password']").css("background", 'pink');
+    $("input:text").css("background", 'yellow');
+    $("input[type='radio']").css("margin", '30px');
+    // $("input:checked").css("margin", '30px');
+
+
 
 });
