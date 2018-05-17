@@ -12,10 +12,17 @@ $(document).ready(function() {
 
 
     // SELECT OTHER ELEMENT
-    $("input[type='password']").css("background", 'pink');
-    $("input:text").css("background", 'yellow');
-    $("input[type='radio']").css("margin", '30px');
+    // $("input[type='password']").css("background", 'pink');
+    // $("input:text").css("background", 'yellow');
+    // $("input[type='radio']").css("margin", '30px');
     // $("input:checked").css("margin", '30px');
+
+    $("li:first").css("background", "red")
+    $("li:last").css("background", "red")
+    $("li:odd").css("background", "yellow")
+
+    $("tr:odd").css("background", "red");
+
 
 
 
