@@ -43,8 +43,21 @@ $(document).ready(function() {
     // $(".parent p:first-of-type").css("background", "red");
 
     // $(".parent p:nth-child(2)").css("background", "red");
-    $(".parent p:nth-last-child(1)").css("background", "red");
+    // $(".parent p:nth-last-child(1)").css("background", "red");
 
 
+
+
+
+    // FINDING ELEMENT
+    // $(".parent").find("span").css("background", "red");
+    // $(".parent").find("#text").css("background", "red");
+    // $(".parent").find(".par").css("background", "red");
+
+    $(".parent").children("p").css("background", "red");
+
+
+
+    
 
 });
