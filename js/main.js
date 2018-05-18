@@ -80,9 +80,26 @@ $(document).ready(function() {
 
     // USING EQ
     // $(".list li:eq(1)").css("background", "red");
-    
+
     // the EQ grabs the wrapper in this case
-    $(".list").parents().eq(0).css("background", "red");
+    // $(".list").parents().eq(0).css("background", "red");
+
+
+
+
+
+
+
+    // FIRST, LAST, FILTER and NOT
+    // $('div').first().css("background", "red");
+
+    // $('div').last().css("background", "red");
+
+    // $('div').not(".different").css("background", "red");
+
+    $('div').filter(".different").css("background", "red");
+
+
 
     
 
