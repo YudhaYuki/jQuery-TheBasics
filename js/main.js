@@ -71,6 +71,20 @@ $(document).ready(function() {
 
 
     // PREVIOUS AND NEXT
-    $('.second').next().css("background", "blue");
+    // $('.second').next().css("background", "blue");
+
+
+
+
+
+
+    // USING EQ
+    // $(".list li:eq(1)").css("background", "red");
+    
+    // the EQ grabs the wrapper in this case
+    $(".list").parents().eq(0).css("background", "red");
+
+    
+
 
 });
