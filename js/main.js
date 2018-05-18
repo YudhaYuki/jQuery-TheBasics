@@ -54,8 +54,17 @@ $(document).ready(function() {
     // $(".parent").find("#text").css("background", "red");
     // $(".parent").find(".par").css("background", "red");
 
-    $(".parent").children("p").css("background", "red");
+    // $(".parent").children("p").css("background", "red");
 
+
+
+
+    // GETTING THE PARENTS
+    // $('.user').parent().css("background", "red");
+
+    // $('.user').parents(".parent").css("background", "red");
+
+    $('.user').parents().css("background", "red");
 
 
     
