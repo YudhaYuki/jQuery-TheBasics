@@ -115,6 +115,13 @@ $(document).ready(function() {
         parent.appendChild(newElement);
     */
 
+    // $('.parent').append('<div class="newDiv">Mi new Div</div>');
+    // $('<div class="newDiv">Mi new Div</div>').appendTo('.parent');
+
+    // $('.parent').prepend('<div class="newDiv">Mi new Div</div>');
+    $('<div class="newDiv">Mi new Div</div>').prependTo('.parent');
+
+
 
 
 });
