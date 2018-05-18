@@ -64,9 +64,13 @@ $(document).ready(function() {
 
     // $('.user').parents(".parent").css("background", "red");
 
-    $('.user').parents().css("background", "red");
+    // $('.user').parents().css("background", "red");
 
 
     
+
+
+    // PREVIOUS AND NEXT
+    $('.second').next().css("background", "blue");
 
 });
