@@ -97,11 +97,24 @@ $(document).ready(function() {
 
     // $('div').not(".different").css("background", "red");
 
-    $('div').filter(".different").css("background", "red");
+    //$('div').filter(".different").css("background", "red");
 
 
 
     
+
+
+    // DOM - APPENDING and PREPENDING
+    /* Pure JavaScript Way
+        var parent = document.querySelector('.parent');
+        var newElement = document.createElement('div');
+
+        newElement.className = "newDiv";
+        newElement.innerText = "Mi new element";
+
+        parent.appendChild(newElement);
+    */
+
 
 
 });
