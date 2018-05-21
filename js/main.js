@@ -160,7 +160,7 @@
 
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
     // DOM - REMOVING ELEMENTS
     // $('.removeMe').remove();
@@ -172,9 +172,24 @@ $(document).ready(function() {
     // $('ul').empty();
 
     // $('ul').html('');
-    $('ul').html('<li>ELEMENT</li>');
+    // $('ul').html('<li>ELEMENT</li>');
+
+// });
 
 
 
+
+
+
+
+
+
+$(document).ready(function() {
+
+    // DOM - ACCESS ELEMENT DATA
+    // console.log($('a').text());
+
+    $('a').text("Something else!")
+    
 
 });
