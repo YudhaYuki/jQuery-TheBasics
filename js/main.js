@@ -187,9 +187,22 @@
 $(document).ready(function() {
 
     // DOM - ACCESS ELEMENT DATA
-    // console.log($('a').text());
 
-    $('a').text("Something else!")
-    
+    // console.log($('a').text());
+    // $('a').text("Something else!");
+
+    // console.log($('a').attr("href"));
+    // $('a').attr("href", "amazon.com")
+
+    // console.log($('a').attr("style"));
+
+    // console.log($('input').val());
+
+    console.log($('input').prop("checked"));
+
+
+
+
+
 
 });
