@@ -204,7 +204,7 @@
 
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
     // DOM - Playing with classes
 
@@ -232,6 +232,36 @@ $(document).ready(function() {
     // $('.element').removeClass('anotherClass');
 
     // better method
-    $('.element').toggleClass("anotherClass bottom");
+    // $('.element').toggleClass("anotherClass bottom");
+
+// });
+
+
+
+
+
+
+$(document).ready(function() {
+
+    // DOM - Playing with styles
+
+    var element = $('.element');
+
+    console.log(element.css("width"));
+    console.log(element.css("fontsize"));
+
+    console.log(element.width());
+    console.log(element.height());
+
+    // element.css("background", "red");
+    // element.css("width", "500px");
+
+    // element.css("width", "+=50px");
+
+    element.css({
+        "background": "red",
+        "color": "blue",
+        "width": "+=50px"
+    })
 
 });
