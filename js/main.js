@@ -119,7 +119,22 @@ $(document).ready(function() {
     // $('<div class="newDiv">Mi new Div</div>').appendTo('.parent');
 
     // $('.parent').prepend('<div class="newDiv">Mi new Div</div>');
-    $('<div class="newDiv">Mi new Div</div>').prependTo('.parent');
+    // $('<div class="newDiv">Mi new Div</div>').prependTo('.parent');
+
+
+
+
+
+
+
+
+
+    // DOM - BEFORE AND AFTER
+    // $('.element').before('<div>Before</div>');
+    // $('.element').after('<div>After</div>');
+
+    // Example in real world use
+    $('input').after('<div class="error">Missing Message</div>')
 
 
 
