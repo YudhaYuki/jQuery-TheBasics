@@ -184,7 +184,7 @@
 
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
     // DOM - ACCESS ELEMENT DATA
 
@@ -198,11 +198,40 @@ $(document).ready(function() {
 
     // console.log($('input').val());
 
-    console.log($('input').prop("checked"));
+    // console.log($('input').prop("checked"));
+
+// });
 
 
 
+$(document).ready(function() {
+
+    // DOM - Playing with classes
+
+    // var classes = $('div').attr('class');
+    // console.log(classes);
 
 
+    // Check if element has a class
+    // console.log($('.element').hasClass('anotherClass'));
+
+
+    // var check = $('.element').hasClass('anotherClass')
+
+    // if(check) {
+    //     console.log('Has it')
+    // } else {
+    //     console.log('Has NOT')
+    // }
+
+
+    // Adding a class
+    // $('.element').addClass('bottom');
+
+    // Remove a class
+    // $('.element').removeClass('anotherClass');
+
+    // better method
+    $('.element').toggleClass("anotherClass bottom");
 
 });
