@@ -1,4 +1,4 @@
-$(document).ready(function() {
+// $(document).ready(function() {
 
     // console.log(document.querySelectorAll('p'));
 
@@ -144,15 +144,35 @@ $(document).ready(function() {
 
 
 
+// $(document).ready(function() {
 
 
     // DOM - REPLACING ELEMENTS
 
     // $('.replaceMe').replaceWith('<div>Replaced</div>');
     // $('<div>Replaced</div>').replaceAll("div")
-    $('<div>Replaced</div>').replaceAll(".replaceMe, replaceMeAgaon")
+    // $('<div>Replaced</div>').replaceAll(".replaceMe, replaceMeAgaon")
+
+// });
 
 
+
+
+
+
+$(document).ready(function() {
+
+    // DOM - REMOVING ELEMENTS
+    // $('.removeMe').remove();
+
+    // remove one element
+    // $('ul li:eq(2)').remove();
+    
+    // remove all element in the ul
+    // $('ul').empty();
+
+    // $('ul').html('');
+    $('ul').html('<li>ELEMENT</li>');
 
 
 
