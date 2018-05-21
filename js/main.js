@@ -134,7 +134,25 @@ $(document).ready(function() {
     // $('.element').after('<div>After</div>');
 
     // Example in real world use
-    $('input').after('<div class="error">Missing Message</div>')
+    // $('input').after('<div class="error">Missing Message</div>')
+
+
+
+
+
+
+
+
+
+
+
+    // DOM - REPLACING ELEMENTS
+
+    // $('.replaceMe').replaceWith('<div>Replaced</div>');
+    // $('<div>Replaced</div>').replaceAll("div")
+    $('<div>Replaced</div>').replaceAll(".replaceMe, replaceMeAgaon")
+
+
 
 
 
