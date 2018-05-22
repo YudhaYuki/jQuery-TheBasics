@@ -276,7 +276,7 @@ $(document).ready(function() {
 
 
 
-
+/*
 // DATA ATTRIBUTES
 
 $(document).ready(function() {
@@ -288,8 +288,42 @@ $(document).ready(function() {
 
     var cars = ["ford", "chevy", "honda"];
     $('.element').data("cars", cars)
-    
+
     console.log($('.element').data());
 
+});
+*/
+
+
+
+
+
+
+// UNDESTANDING EVENT
+
+$(document).ready(function() {
+
+    // Vanila JavaScript Way
+    /*
+    var element = document.querySelector('.element');
+    element.addEventListener('click', function() {
+        console.log('Clicked !');
+    })
+    */
+
+
+    // jQuery Way
+    // Click
+    /*
+    $('.element').click(function() {
+        console.log('Clicked !');
+    })
+    */
+
+
+    // On Click
+    $('.element').on("click mouseleave mouseover", function() {
+        console.log('Clicked !');
+    })
 
 });
