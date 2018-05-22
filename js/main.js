@@ -300,30 +300,97 @@ $(document).ready(function() {
 
 
 // UNDESTANDING EVENT
-
+/*
 $(document).ready(function() {
 
     // Vanila JavaScript Way
-    /*
+    
     var element = document.querySelector('.element');
     element.addEventListener('click', function() {
         console.log('Clicked !');
     })
-    */
+    
 
 
     // jQuery Way
     // Click
-    /*
+    
     $('.element').click(function() {
         console.log('Clicked !');
     })
-    */
+    
 
 
     // On Click
     $('.element').on("click mouseleave mouseover", function() {
         console.log('Clicked !');
     })
+
+});
+
+*/
+
+
+
+
+
+
+
+// MOUSE EVENT
+
+$(document).ready(function() {
+
+    /*
+    $('.element').mouseenter(function() {
+        console.log('Mouse Enter')
+    });
+
+    $('.element').mouseleave(function() {
+        console.log('Mouse Leave')
+    });
+    */
+
+    // Another way with hover
+    /*
+    $('.element').hover(function() {
+        console.log('Mouse enter');
+    }, function() {
+        console.log('Mouse leave')
+    })
+    */
+
+
+    // Mouse up and down
+    /*
+    $('.element').mousedown(function() {
+        console.log('Click down !');
+    });
+    $('.element').mouseup(function() {
+        console.log('Click release !');
+    });
+    */
+
+
+    // Mouse MOVE
+    /*
+    $('.element').mousemove(function() {
+        console.log('moving it !');
+    });
+    */
+
+    /*
+    $('.element').click(function(e) {
+        console.log(e);
+    })
+    */
+
+    $('.element').mousemove(function(e) {
+
+        var pagecoords = "(" + e.pageX + " , " + e.pageY + ")";
+
+        console.log("coords: " + pagecoords);
+
+    });
+
 
 });
