@@ -241,6 +241,8 @@
 
 
 
+
+/*
 $(document).ready(function() {
 
     // DOM - Playing with styles
@@ -263,5 +265,31 @@ $(document).ready(function() {
         "color": "blue",
         "width": "+=50px"
     })
+
+});
+*/
+
+
+
+
+
+
+
+
+
+// DATA ATTRIBUTES
+
+$(document).ready(function() {
+
+    console.log($('.element').data("name"));
+    console.log($('.element').data("hobbies"));
+
+    console.log($('.element').data());
+
+    var cars = ["ford", "chevy", "honda"];
+    $('.element').data("cars", cars)
+    
+    console.log($('.element').data());
+
 
 });
