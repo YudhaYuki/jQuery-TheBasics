@@ -436,7 +436,7 @@ $(document).ready(function() {
 
 
 
-
+/*
 $(document).ready(function() {
 
     // SCROLLING
@@ -451,13 +451,53 @@ $(document).ready(function() {
     $(window).resize(function() {
         console.log('resize');
     })
-    */
 
     // ON
     $(document).on("click", ".element", function() {
         console.log('click');
     })
 });
+*/
+
+
+
+
+
+
+$(document).ready(function() {
+
+    // FOCUS in and OUT
+    /*
+    $('input').focusin(function() {
+        console.log('Focus in')
+    });
+
+    $('input').focusout(function() {
+        console.log('Focus out')
+    });
+    */
+
+
+    $('input').blur(function(e) {
+        // JS way
+        // var value = e.target.value;
+
+        //jQuery Way
+        var value = $(this).val();
+
+        if (value.length < 5) {
+            $(this).addClass('error')
+        } else {
+            $(this).removeClass('error');
+        }
+
+    })
+
+});
+
+
+
+
 
 
 
