@@ -338,6 +338,7 @@ $(document).ready(function() {
 
 // MOUSE EVENT
 
+/*
 $(document).ready(function() {
 
     /*
@@ -383,7 +384,8 @@ $(document).ready(function() {
         console.log(e);
     })
     */
-
+    
+    /*
     $('.element').mousemove(function(e) {
 
         var pagecoords = "(" + e.pageX + " , " + e.pageY + ")";
@@ -391,6 +393,44 @@ $(document).ready(function() {
         console.log("coords: " + pagecoords);
 
     });
+});
 
+*/
+
+
+
+$(document).ready(function() {
+
+    // Get VALUE of ANY KEY in KEYBOAR we press
+    /*
+    $(document).keydown(function(e) {
+        console.log(e.which);
+    })
+    */
+
+    // MOVE Element
+    /*
+    $(document).keydown(function(e) {
+
+        var DOWN = 40;
+        var RIGHT = 39;
+
+        if(e.which === DOWN) {
+            $('.element').css({top:"+=10px"});
+        }
+        if(e.which === RIGHT) {
+            $('.element').css({left:"+=10px"});
+        }
+    })
+    */
+
+    // Get VALUE of ANY KEY in KEYBOAR we release aftre pressing
+
+    $(document).keyup(function(e) {
+        console.log(e.which);
+    })
+    
+    
 
 });
+
