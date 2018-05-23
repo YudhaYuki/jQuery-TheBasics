@@ -398,6 +398,7 @@ $(document).ready(function() {
 */
 
 
+/*
 
 $(document).ready(function() {
 
@@ -422,15 +423,45 @@ $(document).ready(function() {
             $('.element').css({left:"+=10px"});
         }
     })
-    */
 
     // Get VALUE of ANY KEY in KEYBOAR we release aftre pressing
 
     $(document).keyup(function(e) {
         console.log(e.which);
     })
-    
-    
 
 });
+*/
+
+
+
+
+
+$(document).ready(function() {
+
+    // SCROLLING
+    /*
+    $(document).scroll(function() {
+        console.log('scrolling');
+    })
+    */
+    
+    // RESIZE
+    /*
+    $(window).resize(function() {
+        console.log('resize');
+    })
+    */
+
+    // ON
+    $(document).on("click", ".element", function() {
+        console.log('click');
+    })
+});
+
+
+
+
+
+
 
