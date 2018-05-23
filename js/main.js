@@ -500,6 +500,7 @@ $(document).ready(function() {
 
 
 
+/*
 $(document).ready(function() {
 
     $('form').submit(function(e) {
@@ -507,6 +508,40 @@ $(document).ready(function() {
         console.log('nor reloading !');
     });
 
+});
+*/
+
+
+
+
+
+
+
+$(document).ready(function() {
+
+    /*
+    $('input').change(function() {
+        console.log('Changed !')
+    });
+
+    $('select').change(function() {
+        console.log('Changed !')
+    });
+
+    $('input[type="checkbox"]').change(function() {
+        console.log('Changed !')
+    });
+    */
+
+    $('input[type="checkbox"]').change(function() {
+
+        var checked = $(this).is(":checked");
+        if (checked) {
+            console.log($(this).val() + ' is checked!')
+        } else {
+            console.log($(this).val() + ' NOT checked!')
+        }
+    });
 });
 
 
