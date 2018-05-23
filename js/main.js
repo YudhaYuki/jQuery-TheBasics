@@ -462,7 +462,7 @@ $(document).ready(function() {
 
 
 
-
+/*
 
 $(document).ready(function() {
 
@@ -475,7 +475,6 @@ $(document).ready(function() {
     $('input').focusout(function() {
         console.log('Focus out')
     });
-    */
 
 
     $('input').blur(function(e) {
@@ -492,6 +491,21 @@ $(document).ready(function() {
         }
 
     })
+
+});
+*/
+
+
+
+
+
+
+$(document).ready(function() {
+
+    $('form').submit(function(e) {
+        e.preventDefault();
+        console.log('nor reloading !');
+    });
 
 });
 
